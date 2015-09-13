@@ -1,0 +1,34 @@
+{
+  "name": "nuclear-gallery",
+  "version": "0.0.1",
+  "description": "Gallery app powered by Nuclear",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osxi/nuclear-gallery.git"
+  },
+  "keywords": [
+    "nuclear",
+    "react",
+    "gallery"
+  ],
+  "author": "osxi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osxi/nuclear-gallery/issues"
+  },
+  "homepage": "https://github.com/osxi/nuclear-gallery#readme",
+  "devDependencies": {
+    "broccoli": "^0.16.8",
+    "broccoli-babel-transpiler": "^5.4.5",
+    "broccoli-browserify": "^0.1.0",
+    "broccoli-funnel": "^0.2.8",
+    "broccoli-merge-trees": "^0.2.3",
+    "jstransform": "^11.0.3",
+    "react": "^0.13.3"
+  }
+}
