@@ -13,7 +13,6 @@ export default React.createClass({
   },
 
   render() {
-    window.t = this.state.images;
     var imageNodes = this.state.images.toArray().map((image, i) => {
       return (<Image src={image.get('url')} key={i} />);
     });
