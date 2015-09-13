@@ -1,3 +1,4 @@
+import Image from './image';
 import React from 'react';
 import getters from '../models/image/getters';
 import reactor from '../reactor';
@@ -12,8 +13,9 @@ export default React.createClass({
   },
 
   render() {
-    var imageNodes = this.state.images.map(image => {
-      return (<img className="image" src={image.get('url')} />);
+    window.t = this.state.images;
+    var imageNodes = this.state.images.toArray().map((image, i) => {
+      return (<Image src={image.get('url')} key={i} />);
     });
 
     return (
