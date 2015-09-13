@@ -29,6 +29,7 @@
     "broccoli-funnel": "^0.2.8",
     "broccoli-merge-trees": "^0.2.3",
     "jstransform": "^11.0.3",
+    "nuclear-js": "^1.1.1",
     "react": "^0.13.3"
   }
 }

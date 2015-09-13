@@ -1,8 +1,8 @@
 var path = require('path');
 var babel = require('broccoli-babel-transpiler');
+var browserify = require('broccoli-browserify');
 var funnel = require('broccoli-funnel');
 var mergeTrees = require('broccoli-merge-trees');
-var browserify = require('broccoli-browserify');
 
 var vendor = 'node_modules';
 
