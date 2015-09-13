@@ -1,4 +1,4 @@
 import Gallery from './components/gallery';
-import { render } from 'react';
+import React from 'react';
 
-render(<Gallery />, document.body);
+React.render(<Gallery />, document.body);

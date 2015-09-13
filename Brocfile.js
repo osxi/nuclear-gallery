@@ -4,15 +4,19 @@ var funnel = require('broccoli-funnel');
 var mergeTrees = require('broccoli-merge-trees');
 var browserify = require('broccoli-browserify');
 
-var appJs = babel('src', {
+var vendor = 'node_modules';
+
+var app = babel('src', {
   browserPolyfill: true
 });
 
-appJs = browserify(appJs, {
+app = browserify(app, {
   entries: ['./index.js'],
   outputFile: '/dist/js/app.js'
 });
 
 var index = funnel('src', {files: ['index.html']});
 
-module.exports = mergeTrees([index, appJs]);
+var sourceTrees = [vendor, app, index];
+
+module.exports = mergeTrees(sourceTrees);
