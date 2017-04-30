@@ -23,13 +23,13 @@
   },
   "homepage": "https://github.com/osxi/nuclear-gallery#readme",
   "devDependencies": {
-    "broccoli": "^0.16.8",
+    "broccoli": "^1.1.1",
     "broccoli-babel-transpiler": "^5.4.5",
     "broccoli-fast-browserify": "^0.2.10",
-    "broccoli-funnel": "^0.2.8",
-    "broccoli-merge-trees": "^0.2.3",
+    "broccoli-funnel": "^1.2.0",
+    "broccoli-merge-trees": "^2.0.0",
     "jstransform": "^11.0.3",
     "nuclear-js": "^1.1.1",
-    "react": "^0.13.3"
+    "react": "^15.5.4"
   }
 }
